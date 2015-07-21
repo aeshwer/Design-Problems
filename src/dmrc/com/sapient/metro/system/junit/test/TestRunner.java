@@ -8,6 +8,5 @@ public class TestRunner {
     public static void main(String[] args) {
         Result result = JUnitCore.runClasses(TestFareCalculationOnSwipeOut.class);
         System.out.println(result.wasSuccessful());
-
     }
 }
