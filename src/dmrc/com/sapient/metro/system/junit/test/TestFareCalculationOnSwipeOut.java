@@ -1,11 +1,10 @@
-package com.sapient.metro.system.junit.test;
+package dmrc.com.sapient.metro.system.junit.test;
 
 
-import com.sapient.metro.system.FareMapping;
-import com.sapient.metro.system.MetroStation;
-import com.sapient.metro.system.SmartCard;
-import com.sapient.metro.system.SwipeInCommand;
-import com.sapient.metro.system.SwipeOutCommand;
+import dmrc.com.sapient.metro.system.MetroStation;
+import dmrc.com.sapient.metro.system.SmartCard;
+import dmrc.com.sapient.metro.system.SwipeInCommand;
+import dmrc.com.sapient.metro.system.SwipeOutCommand;
 
 public class TestFareCalculationOnSwipeOut {
 

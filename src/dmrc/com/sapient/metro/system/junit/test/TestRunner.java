@@ -1,4 +1,4 @@
-package com.sapient.metro.system.junit.test;
+package dmrc.com.sapient.metro.system.junit.test;
 
 
 import org.junit.runner.JUnitCore;
