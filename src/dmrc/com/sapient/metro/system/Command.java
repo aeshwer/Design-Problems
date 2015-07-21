@@ -5,7 +5,7 @@ package dmrc.com.sapient.metro.system;
  */
 
 public interface Command {
-	
-	void execute() throws Exception;
+
+    void execute() throws Exception;
 
 } 
