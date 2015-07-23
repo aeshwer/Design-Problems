@@ -43,15 +43,15 @@ public class SmartCard {
             double fare = (FareMapping.fareMap.get(DayOfWeek) * NoOfStationsTravelled);
 
             System.out.println(getCardbalance() + " - " + fare + " = ");
-
             CardBalance = (int) (CardBalance - fare);
+            System.out.print(getCardbalance());
 
             if (CardBalance < MIN_VALUE) {
                 throw new NullPointerException("Negative Balance");
 
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            //System.out.println(e.getMessage());
             throw e;
         }
 

@@ -12,7 +12,7 @@ public class MetroStation {
         try {
             command.execute();
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             throw e;
         }
     }

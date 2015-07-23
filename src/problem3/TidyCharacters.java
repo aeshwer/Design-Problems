@@ -9,7 +9,7 @@ public class TidyCharacters {
             if ('0' <= c && c <= '9') {
                 digitsSum += (c - '0');
             } else if ('A' <= c && c <= 'Z') {
-                lettersFrequency[c - 'A']++;
+                lettersFrequency[c - 'A']++;		//Incrementing Frequency per letter, because one letter will hold a place in integer array
             } else {
                 specialChars.append(c);
             }

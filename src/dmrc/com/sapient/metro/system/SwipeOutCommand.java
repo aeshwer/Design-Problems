@@ -12,7 +12,6 @@ public class SwipeOutCommand implements Command {
 
     @Override
     public void execute() throws Exception {
-        //System.out.println("Swipint out the card");
         try {
             System.out.println("\n\n------SWIPE OUT... ------");
             Thread.sleep(2000);
@@ -24,8 +23,6 @@ public class SwipeOutCommand implements Command {
             System.out.println("Card Balance left = " + smartcard.getCardbalance());
 
         } catch (Exception e) {
-            //e.printStackTrace();
-            //System.out.println("Balance Left " + smartcard.getCardbalance());
             System.out.println("Balance is insufficient, Could not go out ");
             throw e;
         }

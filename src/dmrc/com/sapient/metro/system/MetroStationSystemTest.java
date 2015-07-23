@@ -21,14 +21,7 @@ public class MetroStationSystemTest {
             e.printStackTrace();
         }
 
-		/*try {
-            metroStation.SwipeCard(smart);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}*/
-
-        metroStation.setCommand(swipeOut);
+		metroStation.setCommand(swipeOut);
         try {
             metroStation.SwipeCard();
         } catch (Exception e) {

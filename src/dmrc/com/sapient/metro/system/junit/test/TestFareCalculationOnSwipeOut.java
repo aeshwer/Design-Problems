@@ -28,16 +28,7 @@ public class TestFareCalculationOnSwipeOut {
         }
         //assertEquals(6, smcard.getCardbalance());
     }
-
-    //TEST 2 to check if low balance at swipe out throws exception
-    @Test(expected = NullPointerException.class)
-    public void testPrintMessage() throws Exception {
-        // System.out.println("swipe out test");
-        swipeOut = new SwipeOutCommand(smcard, 2);
-        metroStation.setCommand(swipeOut);
-        metroStation.SwipeCard();
-    }
-
+    
     // TEST 3
     public void testDayValidation() {
         metroStation.setCommand(swipeOut);
@@ -49,4 +40,15 @@ public class TestFareCalculationOnSwipeOut {
         }
         //assertEquals("weekday",FareMapping.fareMap.get(smcard.getDay()));
     }
+
+    //TEST 2 to check if low balance at swipe out throws exception
+    @Test(expected = NullPointerException.class)
+    public void testPrintMessage() throws Exception {
+        // System.out.println("swipe out test");
+        swipeOut = new SwipeOutCommand(smcard, 2);
+        metroStation.setCommand(swipeOut);
+        metroStation.SwipeCard();
+    }
+
+    
 }
